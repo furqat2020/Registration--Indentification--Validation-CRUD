@@ -1,0 +1,27 @@
+<div class="mt-5 container" style="width: 35rem;">
+    <h2 class="text-center"><%= title %></h2>
+    <hr>
+    <form method="POST", action="/signup">
+        <div class="form-group">
+          <label for="example1">Name</label>
+          <input name="name" type="text" class="form-control" id="examp1">
+        </div>
+        <div class="form-group">
+          <label for="example2">Email</label>
+          <input name="email" type="email" class="form-control" id="example2">
+        </div>
+        <div class="form-group">
+            <label for="example5">Username</label>
+            <input name="username" type="text" class="form-control" id="examp5">
+          </div>
+        <div class="form-group">
+            <label for="example3">Password</label>
+            <input name="password" type="password" class="form-control" id="example3">
+        </div>
+        <div class="form-group">
+            <label for="example4">Confirm Password</label>
+            <input name="password2" type="password" class="form-control" id="example4">
+        </div>
+        <button type="submit" style="font-family: consolas;" class="btn btn-info btn-sm">Send</button>
+      </form>
+</div>

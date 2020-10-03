@@ -1,0 +1,15 @@
+<div class="mt-4">
+    <h2 class="text-center text-info"><%= title %></h2>
+    <h4 class="text-secondary"><%= data.title %></h4>
+    <h6 class="text-primary"><%= data.author %></h6>
+    <hr>
+    <div class="text-justify">
+        <small class="text-secondary"><i><%= data.body %></i></small>
+    </div>
+    <% if(user) if(data.user_id == user.id) { %>
+        <span class="float-right">
+            <a href="/edit/<%= data._id %>" class="btn btn-outline-info btn-sm">Edit</a>
+            <button data-id="<%= data._id %>" class="btn btn-outline-danger btn-sm del">Delete</button>
+        </span>
+    <% } %>
+</div>

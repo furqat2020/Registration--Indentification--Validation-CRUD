@@ -1,0 +1,19 @@
+<div class="mt-5 container" style="width: 35rem;">
+    <h2 class="text-center"><%= title %></h2>
+    <hr>
+    <form method="POST", action="/add">
+        <div class="form-group">
+          <label for="example1">Title</label>
+          <input name="title" type="text" class="form-control" id="examp1">
+        </div>
+        <div class="form-group">
+          <label for="example2">Avtor</label>
+          <input name="author" type="text" class="form-control" id="example2">
+        </div>
+        <div class="form-group">
+            <label for="example3">Body</label>
+            <textarea style="font-family: consolas; color: #df8484;" class="form-control" name="body" id="example3" cols="30" rows="6"></textarea>
+        </div>
+        <button type="submit" style="font-family: consolas;" class="btn btn-info btn-sm">Send</button>
+      </form>
+</div>

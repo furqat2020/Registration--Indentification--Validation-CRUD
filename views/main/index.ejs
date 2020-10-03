@@ -1,0 +1,14 @@
+<div class="mt-5 container text-center" style="width: 30rem;">
+    <h2><%= title %></h2>
+    <hr>
+    <ul class="list-group" style="font-family: consolas;">
+        <li class="list-group-item list-group-item-dark">
+            <h4><b>Title</b></h4>
+        </li>
+        <% data.map(item => {  %>
+            <li class="list-group-item">
+                <a class="alink" href="/article/<%= item._id %>"><%= item.title %></a>
+            </li>
+        <% }) %>
+    </ul>
+</div>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passport</title>
+    <style>
+        .alink {
+            text-decoration: none !important;
+            color: #17A2B8;
+        }
+
+        .alink:hover {
+            color: #138394;
+        }
+    </style>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+</head>
+<body style="background-color: #F3F3F3;">
+
+    <%- include("parcial/navbar") %>
+    <div class="container mt-3">   
+        <div class="container" style="width: 35rem;">
+            <% if(messages) { %>
+                <% if(messages.success) { %>
+                    <div style="font-size: 13px; font-family: consolas;" class="alert alert-success text-center p-1"><%= messages.success %></div>
+                <% } else if(messages.error) { %>
+                    <% messages.error.forEach(item => {%>
+                    <div style="font-size: 13px; font-family: consolas;" class="alert alert-danger text-center p-1"><%= item %></div>
+            <%}) }} %>
+        </div> 
+        <%- body %>
+    </div>
+    <%- include("parcial/footer") %>
+
+    <script src="/js/jquery-3.1.1.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/main.js"></script>
+    
+</body>
+</html>

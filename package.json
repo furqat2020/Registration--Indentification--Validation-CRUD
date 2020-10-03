@@ -1,0 +1,38 @@
+{
+  "name": "pasport_js",
+  "version": "1.0.0",
+  "description": "Passport Node js",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/github/furqat2020.git"
+  },
+  "keywords": [
+    "passport",
+    "authentificate",
+    "validate"
+  ],
+  "author": "Matnazarov Furqat",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/github/furqat2020/issues"
+  },
+  "homepage": "https://github.com/github/furqat2020#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.0",
+    "express-flash": "0.0.2",
+    "express-session": "^1.17.1",
+    "express-validator": "^5.3.1",
+    "mongoose": "^5.10.7",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0"
+  }
+}
